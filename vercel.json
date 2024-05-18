@@ -1,8 +1,4 @@
 {
   "version": 2,
-  "routes": [
-    { "src": "/transactions/(.*)", "dest": "app.js" },
-    { "src": "/users/(.*)", "dest": "app.js" },
-    { "src": "/", "dest": "app.js" }
-  ]
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }]
 }
